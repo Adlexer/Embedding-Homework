@@ -38,5 +38,5 @@ In essence, this is to login `Ubuntu` on the local host through `SSH`. Using thi
 
 And then you will see the bash command line of `Ubuntu`.
 
-![1-1](img\1-1.png)
+![1-1](img/1-1.png)
 
