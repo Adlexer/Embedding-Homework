@@ -10,7 +10,7 @@ Editing by Adlexer Xu 201930310065
 
 ### Using
 
-#### 1.将本机文件复制到远程服务器上
+#### 1.Copy local files to a remote server
 
 ```bash
 # scp local_path_to_file user@192.168.0.1:remote_path
@@ -21,7 +21,7 @@ Editing by Adlexer Xu 201930310065
 * `192.168.0.1`  IP address of remote server
 * `remote_path` the path of remote server you want to place the file in
 
-#### 2.将远程服务器上的文件复制到本机
+#### 2.Copy files from the remote server to this computer
 
 ```bash
 # scp user@192.168.0.1:remote_path_to_file local_path 
@@ -67,7 +67,7 @@ The test environment is `Ubuntu bash` command line on `Windows cmd` , which is l
 
 ## NFS
 
-NFS 即网络文件系统（Network File-System），可以通过网络让不同机器、不同系统之间可以实现文件共享。通过 NFS，可以访问远程共享目录，就像访问本地磁盘一样。NFS 只是一种文件系统，本身并没有传输功能，是基于 RPC（远程过程调用）协议实现的，采用 C/S 架构。
+NFS is the network file system, which enables file sharing between different machines and systems through the network.
 
 ### Steps
 
@@ -92,6 +92,8 @@ NFS 即网络文件系统（Network File-System），可以通过网络让不同
 
 Setting `/home/nfsroot` as NFS shared directory.
 
+![3-2-1](img/3-2-1.png)
+
 Making new folder on this path.
 
 ```bash
@@ -114,7 +116,7 @@ if you changed the file `/etc/exports`
 
 #### 5.Test
 
-Adding test file and mounting remote NFS shared directory on local Ubuntu.
+
 
 ## TFTP
 
