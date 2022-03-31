@@ -24,3 +24,10 @@ $ git clone -b 1-build-linux https://github.com/Adlexer/Embedding-Homework
 
 [Adlexer/Embedding-Homework at 2-bash-script (github.com)](https://github.com/Adlexer/Embedding-Homework/tree/2-bash-script)
 
+### 3.File Transfer
+
+[Adlexer/Embedding-Homework at 3-file-transfer (github.com)](https://github.com/Adlexer/Embedding-Homework/tree/3-file-transfer)
+
+### 4.Programing
+
+[Adlexer/Embedding-Homework at 4-programing (github.com)](https://github.com/Adlexer/Embedding-Homework/tree/4-programing)
