@@ -74,7 +74,11 @@ include_directories(include)
 
 ![4-2-1](img/4-2-1.png)
 
-## **All source code has been included in this branch. You can try to compile and run it yourself**
+### **All source code has been included in this branch. You can try to compile and run it yourself.**
+
+```bash
+# git clone -b 4-programing https://github.com/Adlexer/Embedding-Homework
+```
 
 ### If you are prompted that CMake cannot be found, you can install it directly.
 
