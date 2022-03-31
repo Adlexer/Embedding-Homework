@@ -65,6 +65,6 @@ $
 
 **Code-server sample, running on Windows browser:**
 
-![2-1](img\2-1.png)
+![2-1](img/2-1.png)
 
 All the above files can be found in this branch.
