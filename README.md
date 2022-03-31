@@ -6,7 +6,7 @@ Edited by Adlexer Xu 201930310065
 
 ## Overall
 
-This is main page branch
+This is the base branch
 
 Clone this 
 
