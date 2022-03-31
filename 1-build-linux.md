@@ -6,7 +6,7 @@ Edited by Adlexer Xu 201930310065
 
 ## Steps
 
-### 1.Setting up Termux application on Android phone
+### 1.Set up Termux application on Android phone
 
 I strongly recommend to download `Termux` in `Google Play`, version 0.117.
 
