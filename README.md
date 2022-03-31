@@ -16,15 +16,10 @@ Editing by Adlexer Xu 201930310065
 # scp local_path_to_file user@192.168.0.1:remote_path
 ```
 
-* `local_path_to_file` local path of file
-* `user`
-* `192.168.0.1`
-* `remote_path`
-
-news.txt 要复制到服务器上的本地文件
-root 通过root用户登录到远程服务器（也可以使用其他拥有同等权限的用户）
-192.168.6.129 远程服务器的ip地址（也可以使用域名或机器名）
-/etc/squid 将本地文件复制到位于远程服务器上的路径
+* `local_path_to_file` the local path to file you want to transfer
+* `user` user on remote server such  as `root`
+* `192.168.0.1`  IP address of remote server
+* `remote_path` the path of remote server you want to place the file in
 
 #### 2.将远程服务器上的文件复制到本机
 
@@ -72,7 +67,54 @@ The test environment is `Ubuntu bash` command line on `Windows cmd` , which is l
 
 ## NFS
 
+NFS 即网络文件系统（Network File-System），可以通过网络让不同机器、不同系统之间可以实现文件共享。通过 NFS，可以访问远程共享目录，就像访问本地磁盘一样。NFS 只是一种文件系统，本身并没有传输功能，是基于 RPC（远程过程调用）协议实现的，采用 C/S 架构。
 
+### Steps
+
+#### 1.Login remote Ubuntu(Windows)
+
+```powershell
+>ssh -p 27503 root@144.34.167.6
+```
+
+#### 2.Install NFS packages
+
+```bash
+# apt install nfs-kernel-server
+# apt install nfs-common
+```
+
+#### 3.Add NFS shared directories
+
+```bash
+# vim /etc/exports
+```
+
+Setting `/home/nfsroot` as NFS shared directory.
+
+Making new folder on this path.
+
+```bash
+# mkdir /home/nfsroot
+```
+
+#### 4.Start NFS service
+
+```bash
+# /etc/init.d/nfs-kernel-server start
+```
+
+or
+
+```bash
+# /etc/init.d/nfs-kernal-server restart
+```
+
+if you changed the file `/etc/exports`
+
+#### 5.Test
+
+Adding test file and mounting remote NFS shared directory on local Ubuntu.
 
 ## TFTP
 
