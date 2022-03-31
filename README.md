@@ -1,26 +1,84 @@
-# Embedding-Homework
+# Programing
 
-Computer Operation Homework of UJN Embedding Classroom
+Programming and building of C/C++ language under Linux
 
 Edited by Adlexer Xu 201930310065
 
-## Overall
+## Basic
 
-This is the base branch of all branches bellow. All homework contents are in these branches, and this main-page branch **DOES NOT** contains any contents.
+The basic target is to write a C/C++ program, compile it into executable file with `g++`, and finally run it.
 
-To clone these branches, you should using git command line with parameter `-b [branch name]`. For example, if you want to clone the first branch in the menu, you can type in:
+Because I like to be lazy, these above operations are still completed in `code-server`.
 
-```bash
-$ git clone -b 1-build-linux https://github.com/Adlexer/Embedding-Homework
+### 1.Create a C/C++ program files(.cpp), type in the simplest code in the world
+
+test.cpp
+
+```c++
+#include <iostream>
+
+int main()
+{
+    std::cout << "hello world" << std::endl;
+    return 0;
+}
 ```
 
-## Menu
+### 2.Compile it using g++
 
-### 1.Build Linux
+```bash
+# g++ -g test.cpp -o test.o
+```
 
-[Adlexer/Embedding-Homework at 1-build-linux (github.com)](https://github.com/Adlexer/Embedding-Homework/tree/1-build-linux)
+### 3.Run
 
-### 2.Bash Script
+```bash
+# ./test.o
+```
 
-[Adlexer/Embedding-Homework at 2-bash-script (github.com)](https://github.com/Adlexer/Embedding-Homework/tree/2-bash-script)
+![4-1-1](img/4-1-1.png)
+
+## Advanced
+
+Using `CMake` to build a cross platform compilation system.
+
+No one understands what you say, so don't say it.
+
+### 1.Create CMakeLists.txt
+
+```cmake
+cmake_minimum_required(VERSION 3.0)
+
+project(cmake-test)
+
+add_library(test-lib STATIC src/test-header.cpp) 
+add_executable(test test.cpp)
+target_link_libraries(test test-lib)
+include_directories(include)
+```
+
+### 2.Configure CMake project
+
+```bash
+# mkdir build
+# cd build
+# cmake ..
+```
+
+### 3.Build and run
+
+```bash
+# cmake --build .
+# ./test
+```
+
+![4-2-1](img/4-2-1.png)
+
+## **All source code has been included in this branch. You can try to compile and run it yourself**
+
+### If you are prompted that CMake cannot be found, you can install it directly.
+
+```bash
+# apt install cmake
+```
 
