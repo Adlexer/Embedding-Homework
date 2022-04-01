@@ -36,7 +36,7 @@ return 0;
 # ./test.o
 ```
 
-![4-1-1](img\4-1-1.png)
+![4-1-1](img/4-1-1.png)
 
 ## Advanced
 
@@ -72,7 +72,7 @@ include_directories(include)
 # ./test
 ```
 
-![4-2-1](img\4-2-1.png)
+![4-2-1](img/4-2-1.png)
 
 ### **All source code has been included in this branch. You can try to compile and run it yourself.**
 
