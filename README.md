@@ -8,9 +8,9 @@ Edited by Adlexer Xu 201930310065
 
 ### 1.Set up Termux application on Android phone
 
-I strongly recommend to download `Termux` in `Google Play`, version 0.117.
+I strongly recommend downloading `Termux` in `Google Play`, version 0.117.
 
-If you don't have enough conditions to climb-over-the-wall, this branch had provided the existing APK files, but the following downloading steps may be seriously slow.
+If you cannot access a Virtual private network(VPN), this branch has provided the existing APK files. But the following downloading steps may be plodding in this case.
 
 ### 2.Install proot-distro on Termux
 
@@ -34,7 +34,7 @@ Then the latest version of `Ubuntu`(21.10 Impish Indri) will be installed direct
 $ proot-distro login ubuntu
 ```
 
-In essence, this is to login `Ubuntu` on the local host through `SSH`. Using this command the next time you need to use `Ubuntu`.
+Essentially, this is for logging `Ubuntu` on the local host through `SSH`. So it would be best if you use `Ubuntu` when using this command the next time.
 
 And then you will see the bash command line of `Ubuntu`.
 
