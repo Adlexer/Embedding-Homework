@@ -6,9 +6,9 @@ Edited by Adlexer Xu 201930310065
 
 ## Basic
 
-The basic target is to write a C/C++ program, compile it into executable file with `g++`, and finally run it.
+The primary target is to write a C/C++ program, compile it into an executable file with `g++`, and finally run it.
 
-Because I like to be lazy, these above operations are still completed in `code-server`.
+Because I am lazy again, these above operations are also completed in `code-server`.
 
 ### 1.Create a C/C++ program files(.cpp), type in the simplest code in the world
 
@@ -19,8 +19,8 @@ test.cpp
 
 int main()
 {
-    std::cout << "hello world" << std::endl;
-    return 0;
+std::cout << "hello world" << std::endl;
+return 0;
 }
 ```
 
@@ -36,11 +36,11 @@ int main()
 # ./test.o
 ```
 
-![4-1-1](img/4-1-1.png)
+![4-1-1](C:/Users/Adlexer/Documents/GitHub/Embedding-Homework/img/4-1-1.png)
 
 ## Advanced
 
-Using `CMake` to build a cross platform compilation system.
+`CMake` is used to build a cross-platform compilation system.
 
 No one understands what you say, so don't say it.
 
@@ -72,7 +72,7 @@ include_directories(include)
 # ./test
 ```
 
-![4-2-1](img/4-2-1.png)
+![4-2-1](C:/Users/Adlexer/Documents/GitHub/Embedding-Homework/img/4-2-1.png)
 
 ### **All source code has been included in this branch. You can try to compile and run it yourself.**
 
@@ -84,5 +84,3 @@ include_directories(include)
 
 ```bash
 # apt install cmake
-```
-
