@@ -6,9 +6,9 @@ Edited by Adlexer Xu 201930310065
 
 ## Overall
 
-This is the base branch of all branches bellow. All homework contents are in these branches, and this main-page branch **DOES NOT** contains any contents.
+This is the base branch of all branches below. All homework contents are in these branches, and this main-page branch **DOES NOT** contain any content.
 
-To clone these branches, you should using git command line with parameter `-b [branch name]`. For example, if you want to clone the first branch in the menu, you can type in:
+You should use the git command line with parameter `-b [branch name]` to clone these branches. For example, if you want to clone the first branch in the menu, you can type in:
 
 ```bash
 $ git clone -b 1-build-linux https://github.com/Adlexer/Embedding-Homework
@@ -32,3 +32,6 @@ $ git clone -b 1-build-linux https://github.com/Adlexer/Embedding-Homework
 
 [Adlexer/Embedding-Homework at 4-programing (github.com)](https://github.com/Adlexer/Embedding-Homework/tree/4-programing)
 
+## Acknowledgement
+
+Thanks to Xueyi Cao for helping me with translation and grammar correction. 
